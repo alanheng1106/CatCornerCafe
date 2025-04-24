@@ -1,0 +1,407 @@
+/* Resetting Default Browser Styles */
+/* this avoids using default browser styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding doesn't affect total width/height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 130px;
+}
+
+/* Navigation Bar Section */
+/* Logo configuration*/
+.logo {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 247, 226, 0.85);
+    backdrop-filter: blur(6px);
+    padding: 0px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+    align-self: center;
+    height: 30px;
+    width: 30px;
+    object-fit: cover; /* Ensures full-screen image scaling */
+}
+
+nav h1 {
+    text-align: left;
+    font-size: 40px;
+    font-family: serif;
+    font-style: italic;
+    margin-left: -50px;
+    padding-left: 50px;
+    border-left: 5px solid #000000;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+nav ul li:not(:last-child){
+    border-right: 5px solid #000000;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    border-radius: 50px;
+    padding: 4px 10px 4px 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.content {
+    flex:1;
+}
+
+html, body {
+    height: 100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer id config*/
+footer{
+    background-color: #fff7e2;
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+    border-top: #000000 1px solid;
+}
+
+footer img {
+    margin: 0px 10px -5px 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+footer a:hover {
+    color: blue;
+}
+
+footer p{
+    padding-top: 15px;
+}
+/* To this part for nav, footer, body and global default settings */
+/* Section Styling */
+
+#cupSizeDisplay img {
+    margin-left: 175px;
+    height: 60vh;
+    width: 75vw;
+}
+
+#disclaimer p {
+    text-align: center;
+    color: #5f4630;
+}
+
+h2 {
+    margin-top: 5px;
+    padding-top: 15px;
+}
+
+.menu-section {
+    text-align: center;
+    background-color: #fff7e2;
+    padding: 20px 0;
+
+}
+
+.menu-section h2{
+    font-weight: bold;
+    font-style: italic;
+    background-color: #ca9265;
+    margin: auto;
+    padding: 10px;
+    width: 180px;
+    border-radius: 15px;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.menu-items {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    gap: 20px; /* Adjust spacing between items */
+    padding: 10px;
+}
+/* Using webkit to make the stylise the scrollbar */
+.menu-items::-webkit-scrollbar {
+    height: 8px; /* Adjusts height of scrollbar */
+}
+
+.menu-items::-webkit-scrollbar-track {
+    background: #bd987a; /* Track color */
+    border-radius: 10px; /* Rounded edges */
+}
+
+.menu-items::-webkit-scrollbar-thumb {
+    background: #5f4630; /* Scrollbar color */
+    border-radius: 10px; /* Rounded edges */
+}
+
+.menu-items::-webkit-scrollbar-thumb:hover {
+    background: #241910; /* Darker color on hover */
+}
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Adjust based on desired size */
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
+}
+
+.item p {
+    margin-top: 15px; /* Push text further down */
+    text-align: center;
+    width: 100%; /* Ensure it does not overflow */
+    max-width: 100%; /* Keeps text within its container */
+    white-space: normal; /* Allow proper wrapping */
+    word-wrap: break-word; /* Ensures text does not overflow */
+    overflow-wrap: break-word; /* Alternative for better compatibility */
+    padding: 10px; /* Adds space around text */
+}
+
+.item p b{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.image {
+    width: 250px;
+    height: 300px;
+    background-color: #f6e5b5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.image img {
+    width:100px;
+    height:150px;
+    background-color: #f6e5b5;
+    margin-top: 0px;
+}
+
+.imageBestSeller {
+    width: 250px;
+    height: 300px;
+    background-color: #f6e5b5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.imageBestSeller img {
+    width:140px;
+    height:210px;
+    background-color: #f6e5b5;
+    margin-top: -40px;
+    margin-left: 30px;
+}
+
+.dessertBread {
+    width: 250px;
+    height: 300px;
+    background-color: #f6e5b5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.dessertBread img {
+    width:150px; /*Just change the width*/
+    height:120px; /*and height here to fix the ratio*/
+    background-color: #f6e5b5;
+    margin-top: 0px;
+}
+
+.prev, .next {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.descript{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Adjust based on desired size */
+    padding: 0px 10px 10px 10px;    
+    text-align: left;
+    margin:0px;
+    line-height: 150%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+.descript p {
+    margin-top:0px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6e5b5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    margin-top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    background-color: #f6e5b5;
+    border-radius: 8px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddc996;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*These are all just decoration css settings*/
+/*Try to ignore most of them as its just the same thing copy pasted like 4 times with small changes to fix the display of the image*/
+
+.decoContainer{
+    position: absolute;
+    background-color: transparent;
+    right: 2px;
+    z-index: 10;
+    pointer-events: none; 
+}
+  
+.floatDecor {
+    background-color: transparent;
+}
+
+.floatDecor img {
+    width: 800px;
+    height: 500px;
+    background-color: transparent;
+  }
+
+.decoContainer2 {
+    position: absolute;
+    background-color: transparent;
+    transform:translate(-350px,70px);
+    pointer-events: none; /* so it doesn't block interactions */
+  }
+  
+.floatDecor2 {
+    background-color: transparent;
+}
+
+.floatDecor2 img {
+    width: 800px;
+    height: 500px;
+    background-color: transparent;
+  }
+
+.decoContainerCake {
+    position: absolute;
+    background-color: transparent;
+    transform:translate(-550px,70px);
+    pointer-events: none; /* so it doesn't block interactions */
+  }
+  
+.floatDecorCake {
+    background-color: transparent;
+}
+
+.floatDecorCake img {
+    width: 300px;
+    height: 200px;
+    background-color: transparent;
+  }
+
+.decoContainerCroissant {
+    position: absolute;
+    background-color: transparent;
+    transform: translate(500px,100px);
+    pointer-events: none; /* so it doesn't block interactions */
+  }
+  
+.floatDecorCroissant {
+    background-color: transparent;
+}
+
+.floatDecorCroissant img {
+    width: 300px;
+    height: 200px;
+    background-color: transparent;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}

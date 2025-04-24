@@ -1,0 +1,252 @@
+/*This copy is for index page*/
+
+/* Resetting Default Browser Styles */
+/* this avoids using default browser styles (WOW WHO COULD HAVE GUESSED) */
+/* Copy from this part */
+
+/*
+light to dark DESC
+#5f4630
+#956d4b
+#3f2d1d
+#361f0b
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../assets/whiteBackground.png);
+    padding-top: 130px;
+}
+
+/* Navigation Bar Section */
+/* Logo Config*/
+.logo {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 247, 226, 0.85);
+    backdrop-filter: blur(6px);
+    padding: 0px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+    align-self: center;
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+}
+
+nav h2 {
+    text-align: left;
+    font-size: 40px;
+    font-family: serif;
+    font-style: italic;
+    margin-left: -50px;
+    padding-left: 50px;
+    border-left: 5px solid #000000;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+nav ul li:not(:last-child){
+    border-right: 5px solid #000000;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    border-radius: 50px;
+    padding: 4px 10px 4px 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Footer id config*/
+footer{
+    background-color: #fff7e2;
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+    border-top: #000000 1px solid;
+}
+
+footer img {
+    margin: 0px 10px -5px 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+footer a:hover {
+    color: blue;
+}
+
+footer p{
+    padding-top: 15px;
+}
+/* To this part for nav, footer, body and global default settings */
+/* Section Styling */
+/* Home Section */
+/* Blog Section */
+.blogSection {
+    margin: 2% 10px 5% 10px;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+/* Updated container to hold image + text side by side */
+.contentWrapper {
+    display: flex;
+    align-items: stretch;
+    background-color: #fff7e2;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Image styling */
+.contentWrapper img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Text container beside the image */
+.textContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: black;
+    border-radius: 10px;    
+    padding: 7px;
+}
+
+/* Header and author */
+.textContent ul, .textContent li {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+    background-color: #fff7e2;
+    color: black;
+}
+
+/* Paragraph block */
+.textContent p {
+    background-color: #fff7e2;
+    color: black;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+.postHeader {
+    background-color: #fff7e2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+/* Optional: adjust spacing and appearance */
+.postHeader h1{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.postHeader h3{
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+    border-left: #000000 5px solid;
+    padding-left: 10px;
+}
+
+.postHeader p{
+    font-size: 15px;
+    text-align: right;
+    color: black;
+}
+
+.postHeader .author {
+    color: black;
+    padding-left: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6e5b5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    margin-top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    background-color: #f6e5b5;
+    border-radius: 8px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddc996;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}

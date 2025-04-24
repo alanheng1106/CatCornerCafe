@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Cat Corner Cafe</title>
+    <link rel="stylesheet" href="css/indexStyles.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+</head>
+<body>
+    <!--Background Music (credits to @Lofi Kitty on youtube)-->
+    <!---->
+    <audio autoplay loop hidden>
+        <source src="assets/bgAudio.mp3" type="audio/mpeg">
+      </audio>
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="Cafe Logo"></a>
+        </div>
+        <h2>Cat&nbsp;&nbsp;Corner<br>Cafe</h2>
+        <ul>
+            <li><a href="index.html">Home&nbsp;<img src="assets/decorations/homeHomeIcon.svg" alt="Home Icon"></a></li>
+            <li class="dropdown">
+                <a href="menu.html">Menu&nbsp;<img src="assets/decorations/mugMenuIcon.svg" alt="Menu Icon"></a>
+                <div class="dropdown-content">
+                    <a href="menu.html#coffee-section">Coffee</a>
+                    <a href="menu.html#dessert-section">Dessert</a>
+                    <a href="menu.html#bread-section">Bread</a>
+                </div>
+            </li>
+            <li><a href="blog.html">Our Blog&nbsp;<img src="assets/decorations/cameraBlogIcon.svg" alt="Blog Icon"></a></li>
+            <li><a href="cats.html">Cafe Crew&nbsp;<img src="assets/decorations/catHomeIcon.svg" alt="Cat Icon"></a></li>
+            <li><a href="about.html">About Us&nbsp;<img src="assets/decorations/aboutUsIcon.svg" alt="AboutUS Icon"></a></li>
+        </ul>
+    </nav>
+
+    <section class="home">
+        <h2>Welcome to Corner Cat Cafe</h2>
+        <p><i>We are an independently owned and operated cafe that is located in Sabah. We are excited to meet you!</i></p>
+    </section>
+
+    <div class="hero-slider">
+        <div class="slider">
+          <div class="slides" id="slides">
+            <img src="assets/promotion/promotion1.png" alt="Banner 1">
+            <img src="assets/promotion/promotion2.png" alt="Banner 2">
+            <img src="assets/promotion/promotion3.png" alt="Banner 3">
+          </div>
+      
+          <!-- Navigation Arrows -->
+          <button class="nav prev" onclick="prevSlide()">❮</button>
+          <button class="nav next" onclick="nextSlide()">❯</button>
+      
+          <!-- Dots -->
+          <div class="dots">
+            <span onclick="goToSlide(0)" class="dot active"></span>
+            <span onclick="goToSlide(1)" class="dot"></span>
+            <span onclick="goToSlide(2)" class="dot"></span>
+          </div>
+        </div>
+    </div>
+      <br>
+        <!-- Home Section (With video)  -->
+         <div id="videoDisplay">
+
+            <video width="1580" height="889" controls autoplay>
+                <source src="assets/homeVideo.MP4" type="video/mp4">
+                <!--text for browsers which do not support html video tags (outdated browsers)-->
+                <p>If you are reading this, it means your browser doesn't support the html video tag</p>
+            </video>
+            
+        </div>
+        <!--Video credit to @ConnorDoesCoffee, @crystal's pov, and @JA Travel on Youtube for footage in this video on Youtube-->
+
+        <!--Operating Hours Table-->
+        <div class="table-section">
+            <table>
+                <caption><b style="font-size: 25px;">Operating Hours</b></caption>
+                <tr>
+                    <th>Day</th>
+                    <th>Opening Time</th>
+                    <th>Closing Time</th>
+                </tr>
+                <tr>
+                    <th>Monday</th>
+                    <td rowspan="4">8.00 a.m.</td>
+                    <td rowspan ="4">10.00 p.m.</td>
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                    <td>9.00 a.m.</td>
+                    <td>8.00 p.m.</td>
+                </tr>
+                <tr>
+                    <th>Saturday</th>
+                    <td rowspan="2">10.00 a.m.</td>
+                    <td rowspan="2">12.00 a.m.</td>
+                </tr>
+                <tr>
+                    <th>Sunday</th>
+                </tr>
+            </table>
+        </div>
+    <div class="bestseller-display-container">     
+        <h1>Our Best Selling Items‼</h1>   
+        <section class="bestseller-section"> <!--first content section-->
+
+            <div class="bestseller-item-container">
+                <img src="assets/menu/coffee/Cocoa_Cappuccino.png" alt="Cocoa Cappucino" width="200">
+                <h5>Cocoa Cappuccino</h5>
+                <p>A deep, rich, aromatic brew infused with premium grade cocoa flavour. You are sure to fall in love at first sip</p>
+            </div>
+
+            <div class="bestseller-item-container"> <!--right lean picture-->
+                <img src="assets/menu/dessert/Chocolate_Truffles.png" alt="Chocalate Truffles">
+                <h5>Chocolate Truffles</h5>
+                <p>A creamy and rich chocolate cream poured over a rich chocolate sponge cake with a vanilla filling</p>
+            </div>
+
+            <div class="bestseller-item-container"> <!--right lean picture-->
+                <img src="assets/menu/dessert/Chocolate_Cheesecake.png" alt="Chocolate Cheesecake">
+                <h5>Chocolate Cheesecake</h5>
+                <p>A sweet and savory chocolate-flavoured treat with a mix of creamy and solid texture creates a captivating eating experience! </p>
+            </div>
+        </section>
+    </div>
+    <script src="javascript/homePromo.js"></script>
+<!--Copy from this part-->
+    <footer>
+            <img src="assets/decorations/locationIcon.svg" alt="Location Icon" width="20" height="20">
+            <a href="https://maps.app.goo.gl/1M7jn6DJdzmKmSnR6" target="_blank">Lot 53, Lorong Avenue 3, Bandar Utama, 90000 Sandakan, Sabah.</a>
+            <img src="assets/decorations/phoneIcon.svg" alt ="Phone Icon" width="20" height="20">
+            <a href="tel:0128888888">012-888 6666</a>
+            <img src="assets/decorations/emailIcon.svg" alt="Email Icon" width="20" height="20">
+            <a href="mailto:catcornercafe@gmail.com">support@catcornercafe.com</a><br>
+            <p>
+            Cat Corner Cafe &copy; 2025 All Rights Reserved 
+            <img src="assets/decorations/instagram-brands.svg" alt="Instagram Icon" width="20" height="20">
+            <img src="assets/decorations/square-facebook-brands.svg" alt="Facebook Icon" width="20" height="20">
+            <img src="assets/decorations/tiktok-brands.svg" alt="Tiktok Icon" width="20" height="20">
+            </p>
+    </footer>
+</body>
+
+
+</html>
+<!--To this part for the footer-->

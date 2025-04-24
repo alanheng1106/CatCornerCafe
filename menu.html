@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Cat Corner Cafe</title>
+    <link rel="stylesheet" href="css/menuStyles.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+</head>
+<body>
+    <!--Background Music (credits to @Lofi Kitty on youtube)-->
+    <audio autoplay loop hidden>
+        <source src="assets/bgAudio.mp3" type="audio/mpeg">
+        </audio>
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Cafe Logo">
+        </div>
+        <h1>Cat&nbsp;&nbsp;Corner<br> Cafe</h1>
+        <ul>
+            <li><a href="index.html">Home&nbsp;<img src="assets/decorations/homeHomeIcon.svg" alt="Home Icon"></a></li>
+            <li class="dropdown">
+                <a href="menu.html">Menu&nbsp;<img src="assets/decorations/mugMenuIcon.svg" alt="Menu Icon"></a>
+                <div class="dropdown-content">
+                    <a href="#coffee-section">Coffee</a>
+                    <a href="#dessert-section">Dessert</a>
+                    <a href="#bread-section">Bread</a>
+                </div>
+            </li>
+            <li><a href="blog.html">Our Blog&nbsp;<img src="assets/decorations/cameraBlogIcon.svg" alt="Blog Icon"></a></li>
+            <li><a href="cats.html">Cafe Crew&nbsp;<img src="assets/decorations/catHomeIcon.svg" alt="Cat Icon"></a></li>
+            <li><a href="about.html">About Us&nbsp;<img src="assets/decorations/aboutUsIcon.svg" alt="AboutUS Icon"></a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Cup size picture -->
+    <div id="cupSizeDisplay">
+        <img src="assets/bigResolutionFolder/cupChart.jpeg" alt="Cup Size reference" >
+    </div>
+
+    <div id="disclaimer">
+        <p>ALL DRINKS ARE PRICED BASED ON SIZE, SO ALL DRINKS HAVE THE SAME PRICE :3</p>
+    </div>
+
+    <!--Coffee section-->
+    <section id="coffee-section" class="menu-section">
+        <h2>Coffee</h2>
+        <!--Using container to style and position item list easily-->
+        <div class="menu-container">
+            <button class="prev" onclick="scrollLeft()">&#60;</button>
+            <!--Div to contain all items listed using individual divs -->
+            <div class="menu-items">
+                <div class="item">
+                    <div class="imageBestSeller">
+                        <img src="assets/menu/coffee/Asian_Dolce_Latte.png" alt="Asian Dolce Latte">
+                    </div>
+                        <p><b>Asian Dolce Latte</b>&nbsp;&nbsp;
+                        <img src="assets/menu/menu_cold.png" alt="Cold Icon" height="20" width="20"> 
+                        <br>
+                        <div class="descript">
+                            <p>Smooth and velvety textured latte with an Asian twist</p>
+                            <ul>
+                                <li>Espresso</li>
+                                <li>Asian Dolce Syrup</li>
+                                <li>Steamed Milk</li>
+                                <li>Foamed Milk</li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="assets/menu/coffee/Caffe_Americano.png" alt="Caffe Americano">
+                    </div>
+                    <p><b>Caffe Americano</b>&nbsp;&nbsp;
+                        <img src="assets/menu/menu_cold.png" alt="Cold Icon" height="20" width="20">
+                        <img src="assets/menu/menu_hot.png" alt="Hot Icon" height="20" width="20">
+                        <br>
+                        <div class="descript">
+                            <p>A shot of Espresso with a deep-tan crema that&rsquo;s smooth and robust</p>
+                            <ul>
+                                <li>Espresso</li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="assets/menu/coffee/Caffe_Latte.png" alt="Caffe Latte">
+                    </div>
+                    <p><b>Caffe Latte</b>&nbsp;&nbsp;
+                        <img src="assets/menu/menu_cold.png" alt="Cold Icon" height="20" width="20"> 
+                        <br>
+                        <div class="descript">
+                            <p>Rich, full-bodied espresso in steamed milk, lightly topped with foam</p>
+                            <ul>
+                                <li>Espresso</li>
+                                <li>Steamed Milk</li>
+                                <li>Textured Milks</li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="assets/menu/coffee/Caffe_Mocha.png" alt="Caffe Mocha">
+                    </div>
+                    <p><b>Caffe Mocha</b>&nbsp;&nbsp;
+                        <img src="assets/menu/menu_cold.png" alt="Cold Icon" height="20" width="20"> 
+                        <br>
+                        <div class="descript">
+                            <p>Espresso with bittersweet mocha sauce and steamed milk. Topped with sweetened whipped cream.</p>
+                            <ul>
+                                <li>Espresso</li>
+                                <li>Steamed Milk</li>
+                                <li>Cocoa</li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="assets/menu/coffee/Cappucino.png" alt="Cappucino">
+                    </div>
+                    <p><b>Cappuccino</b>&nbsp;&nbsp;
+                        <img src="assets/menu/menu_cold.png" alt="Cold Icon" height="20" width="20"> 
+                        <br>
+                        <div class="descript">
+                            <p>Espresso with steamed milk, topped with a layer of foam provide a stronger espresso flavor. </p>
+                            <ul>
+                                <li>Espresso</li>
+                                <li>Steamed Milk</li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="assets/menu/coffee/Caramel_Macchiato.png" alt="Caramel Macchiato">
+                    </div>
+                    <p><b>Caramel Macchiato</b>&nbsp;&nbsp;
+                        <img src="assets/menu/menu_cold.png" alt="Cold Icon" height="20" width="20">
+                        <img src="assets/menu/menu_hot.png" alt="Hot Icon" height="20" width="20"> 
+                        <br>
+                        <div class="descript">
+                            <p>Freshly steamed milk with vanilla-flavored syrup is marked with espresso, and finished with caramel sauce</p>
+                            <ul>
+                                <li>Espresso</li>
+                                <li>Steamed Milk</li>
+                                <li>Vanilla Syrup</li>
+                                <li>Caramel Sauce</li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="assets/menu/coffee/Cocoa_Cappuccino.png" alt="Cocoa Cappuccino">
+                    </div>
+                    <p>
+                        <b>Cocoa Cappuccino</b>&nbsp;&nbsp;
+                        <img src="assets/menu/menu_cold.png" alt="Cold Icon" height="20" width="20">
+                        <img src="assets/menu/menu_hot.png" alt="Hot Icon" height="20" width="20"> 
+                        <br>
+                        <div class="descript">
+                            <p>Dark, rich espresso with bittersweet mocha sauce lies in wait under a smoothed and stretched layer of thick foam. </p>
+                            <ul>
+                                <li>Espresso</li>
+                                <li>Steamed Milk</li>
+                                <li>Milk Foam</li>
+                                <li>Cocoa Powder</li>
+                                <li>Mocha Sauce</li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="assets/menu/coffee/Coconut_Latte.png" alt="Coconut Latte">
+                    </div>
+                    <p><b>Coconut Latte</b>&nbsp;&nbsp;
+                        <img src="assets/menu/menu_cold.png" alt="Cold Icon" height="20" width="20">
+                        <br>
+                        <div class="descript">
+                            <p>A smooth layer of frothed cold coconut foam and delightful coconutty flavour, enriched with a secret blend.</p>
+                            <ul>
+                                <li>Espresso</li>
+                                <li>Cococnut Milk</li>
+                                <li>Coconut Milk Foam</li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="assets/menu/coffee/Mocha_Foam_Americano.png" alt="Mocha Foam Americano">
+                    </div>
+                    <p><b>Mocha Foam Americano</b>&nbsp;&nbsp;
+                        <img src="assets/menu/menu_cold.png" alt="Cold Icon" height="20" width="20">
+                        <br>
+                        <div class="descript">
+                            <p>A layer of smooth Matcha Cold Foam atop instantly intrigues the palate with the contrasting of Americano and Matcha.</p>
+                            <ul>
+                                <li>Espresso</li>
+                                <li>Matcha Cold Foam</li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="assets/menu/coffee/Vanilla_Cream_Americano.png" alt="Vanilla Cream Americano">
+                    </div>
+                    <p><b>Vanilla Cream Americano</b>&nbsp;&nbsp;
+                        <img src="assets/menu/menu_cold.png" alt="Cold Icon" height="20" width="20">
+                        <br>
+                        <div class="descript">
+                            <p>a smooth, slightly sweet twist on the classic Americano, topped with a light, creamy vanilla foam.</p>
+                            <ul>
+                                <li>Espresso</li>
+                                <li>Vanilla Syrup</li>
+                                <li>Vanilla Sweet Cream</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+            <button class="next" onclick="scrollRight()">&#62;</button>
+        </div>
+    </section>
+    <!-- End of Coffec section -->
+
+     <!--Dessert section-->
+     <section id="dessert-section" class="menu-section">
+        <h2>Dessert</h2>
+        <div class="menu-container">
+            <button class="prev" onclick="scrollLeft()">&#60;</button>
+            <div class="menu-items">
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/dessert/Chocolate_Cheesecake.png" alt="Chocolate Cheesecake">
+                    </div>
+                    <p><b>Chocolate Cheesecake</b><br>RM 14.50/pc
+                        <div class="descript">
+                            <p>A rich, creamy cheesecake infused with decadent chocolate, set on a chocolate cookie crust and 
+                                topped with a smooth chocolate finish. Pure indulgence in every bite.</p>
+                            <p>Suitable with Vegetarian: ✅</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/dessert/Red_Velvet.png" alt="Red Velvet">
+                    </div>
+                    <p><b>Red Velvet</b><br>RM 13.50/pc
+                        <div class="descript">
+                            <p> A soft, moist cake with a hint of cocoa and a striking red hue, layered 
+                                with silky cream cheese frosting for the perfect sweet-tangy balance.</p>
+                            <p>Suitable with Vegetarian: ✅</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/dessert/Chocolate_Truffles.png" alt="Chocolate Truffles">
+                    </div>
+                    <p><b>Chocolate Truffles</b><br>RM 14.50/pc
+                        <div class="descript">
+                            <p>Rich, bite-sized balls of smooth chocolate ganache, coated in cocoa powder, 
+                                nuts, or chocolate for an irresistibly decadent treat.</p>
+                            <p>Allergen Warning: Nuts🌰‼️</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/dessert/Genmaicha_Cream_Choux.png" alt="Genmaicha Cream Choux">                        
+                    </div>
+                    <p><b>Genmaicha Cream Choux</b><br>RM 11.00/pc
+                        <div class="descript">
+                            <p>This crispy choux bun holds an amount of intense MOKUREN / Genmaicha custard-like 
+                                cream filling enough to satisfy any Genmaicha fan.</p>
+                            <p>Suitable with Vegetarian: ✅</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/dessert/Houjicha_Cream_Choux.png" alt="Houjicha Cream Choux">
+                    </div>
+                    <p><b>Houjicha Cream Choux</b><br>RM 11.00/pc
+                        <div class="descript">
+                            <p>This crispy choux bun holds anamount of intense TSUBAKI / Houjicha custard-like 
+                                cream filling enough to satisfy any Houjicha fan.</p>
+                            <p>Suitable with Vegetarian: ✅</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/dessert/Hazelnut_Matcha_Choux.png" alt="Hazelnut Matcha Choux">
+                    </div>
+                    <p><b>Hazelnut Matcha Choux</b><br>RM 12.00/pc
+                        <div class="descript">
+                            <p>Crunchy charcoal cracked choux filled with an intense AJISAI / Matcha 
+                                cream filling, complemented by a caramelised, roasted hazelnut.</p>
+                            <p>Allergen Warning: Nuts🌰‼️</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/dessert/Hazelnut_Chocolate_Choux.png" alt="Hazelnut Chocolate Choux">
+                    </div>
+                    <p><b>Hazelnut Chocolate Choux</b><br>RM 12.00/pc
+                        <div class="descript">
+                            <p>Charcoal choux pastry filled with AKANE/Houjicha cream and a cashew praline center that 
+                                enhances dark roasted cacao notes.</p>
+                            <p>Allergen Warning: Nuts🌰‼️</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/dessert/Matcha_Crunch_Cubes.png" alt="Matcha Crunch Cubes">
+                    </div>
+                    <p><b>Matcha Crunch Cubes</b><br>RM 6.00/pc
+                        <div class="descript">
+                            <p>Mixture of crunchy and fudgy texture with intense and dense explosion of Matcha flavor.</p>
+                            <p>Allergen Warning: Nuts🌰‼️</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/dessert/Matcha_Crunch_Cookies.png" alt="Matcha Crunch Cookies">
+                    </div>
+                    <p><b>Matcha Crunch Cookies</b><br>RM 7.00/pc
+                        <div class="descript">
+                            <p>Melty, crunchy cookie with a feuilletine-crusted exterior, gooey center, and 
+                                white chocolate ganache, infused with YURI Matcha and AKANE Houjicha powder.</p>
+                            <p>Allergen Warning: Nuts🌰‼️</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/dessert/Matcha_Marble_Roulade.png" alt="Matcha Marble Roulade">
+                    </div>
+                    <p><b>Matcha Marble Roulade</b><br>RM 13.00/pc
+                        <div class="descript">
+                            <p>A delicate roulade with a crunchy YURI Matcha meringue exterior and a light 
+                                half-matcha, half-mascarpone cream filling—perfect for matcha lovers!</p>
+                            <p>Suitable with Vegetarian: ✅</p>
+                        </div>
+                    </div>
+            </div>
+            <button class="next" onclick="scrollRight()">&#62;</button>
+        </div>
+    </section>
+    <!-- End of Dessert section -->
+
+     <!--Bread section-->
+     <section id="bread-section" class="menu-section">
+        <h2>Bread</h2>
+        <div class="menu-container">
+            <button class="prev" onclick="scrollLeft()">&#60;</button>
+            <div class="menu-items">
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/bread/Apple_Turnover.png" alt="Apple Turnover">
+                    </div>
+                    <p><b>Apple Turnover</b><br>RM 7.90
+                        <div class="descript">
+                            <p>A delectable snack featuring generous apple chunks enveloped in golden-brown pastry.</p>
+                            <p><b>Ingredients:</b><br>wheat flour, fine butter 16%, water, eggs, salt, wheat gluten</p>
+                           
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/bread/Banana_Chocolate_Muffin.png" alt="Banana Chocolate Muffin">
+                    </div>
+                    <p><b>Banana Chocolate Muffin</b><br>RM 6.90
+                        <div class="descript">
+                            <p>Immerse in the bursting flavors of banana and chocolate chips.</p>
+                            <p><b>Ingredients:</b><br>banana essence, canola oil, fine sugar, eggs, water, 
+                                wheat flour, wheat starch, baking powder, vanilla powder, banana & dark baking chips</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/bread/Chocolate_Lava_Muffin.png" alt="Chocolate Lava Muffin">
+                    </div>
+                    <p><b>Chocolate Lava Muffin</b><br>RM 6.90
+                        <div class="descript">
+                            <p>Chocolate indulgence in a cup - A sinful chocolate chip muffin with decadent chocolate lava filling.</p>
+                            <p><b>Ingredients:</b><br>chocolate cream, canola oil, fine sugar, eggs, wheat flour, cocoa powder, vanilla powder & dark baking chips</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/bread/Brittany.png" alt="Brittany">
+                    </div>
+                    <p><b>Honey & Sea Sault Croll</b><br>RM 6.50
+                        <div class="descript">
+                            <p>Flaky round croissant roll comes drizzled with honey and sea salt.</p>
+                            <p><b>Ingredients:</b><br>wheat flour, fine butter 24%, sugar, yeast, honey, sea salt, wheat gluten, deactivated yeast</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/bread/Choco-Nut_Crescents.png" alt="Choco-Nut Crescents">
+                    </div>
+                    <p><b>Choco-Nut Crescents</b><br> RM 5.50
+                        <div class="descript">
+                            <p>Experience pure bliss with our cocoa-hazelnut filled pastry, wrapped in a fluffy pure butter croissant and topped with crispy chocolate bits.</p>
+                            <p><b>Ingredients:</b><br>wheat flour, fine butter 18%, cocoa hazelnut filling 15%, yeast, sugar, eggs, chocolate chips</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/bread/Chocolate_Extravaganza.png" alt="Chocolate Extravaganza">
+                    </div>
+                    <p><b>Chocolate Extravaganza</b><br>RM 8.00
+                        <div class="descript">
+                            <p>Indulge in layers of milk chocolate and white chocolate center, topped with dark chocolate chips.</p>
+                            <p><b>Ingredients:</b><br>wheat flour, water, fine butter 14%, milk chocolate 8% cocoa butter, eggs, yeast, 
+                                white chocolate 4% chocolate chips 3%, milk powder, salt, wheat gluten</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/bread/Chocolate_Roll.png" alt="Chocolate Roll">
+                    </div>
+                    <p><b>Chocolate Roll</b><br>RM 7.00
+                        <div class="descript">
+                            <p>A sweet roll made with buttery croissant filled with dark chocolate</p>
+                            <p><b>Ingredients:</b><br>wheat flour butter, sugar, yeast, butter oil substitute, chocolate stick, salt</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/bread/Croissant.png" alt="Croissant">
+                    </div>
+                    <p><b>Croissant</b><br>RM 5.50
+                        <div class="descript">
+                            <p>A buttery and flaky baked croissant.</p>
+                            <p><b>Ingredients:</b><br>wheat flour, butter, milk, water, sugar, wet yeast, milk powder, eggs, custard powder, salt, coffee powder</p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/bread/Tiramisu_Brioche.png" alt="Tiramisu Brioche">
+                    </div>
+                    <p><b>Tiramisu Brioche</b><br>RM 10.90
+                        <div class="descript">
+                            <p>Topped with almond crunch, cocoa powder, and a rich chocolate center for a delightful twist of the original.</p>
+                            <p><b>Ingredients:</b><br>wheat flour, caster sugar, water, butter, cream cheese, white chocolate, dark chocolate compound, almond flakes</p>
+                            <p><i><b>This product contain ALCOHOL‼️</b></i></p>
+                        </div>
+                    </div>
+                <div class="item">
+                    <div class="dessertBread">
+                        <img src="assets/menu/bread/Tomato_Focaccia.png" alt="Tomato Focaccia">
+                    </div>
+                    <p><b>Olive Tomato Focaccia</b><br>RM 8.90
+                        <div class="descript">
+                            <p>A tantalizing Italian flatbread topped with rosemary, cherry tomatoes or olives and drizzle with healthy olive oil.</p>
+                            <p><b>Ingredients:</b><br>Wheat flour, cherry tomato, black olive, salt, dried rosemary, fresh rosemary, dried yeast, honey, dried oregano, black papper.</p>
+                        </div>
+                    </div>
+                </div>
+            <button class="next" onclick="scrollRight()">&#62;</button>
+        </div>
+    </section>
+    <!-- End of Bread section -->
+    
+    <!-- Links to Javascript files -->
+    <script src="javascript/menuBrowsingFunction.js" ></script>
+    <script src="javascript/menuDropdown.js"></script>
+
+    <!-- Footer section -->
+    <footer>
+        <img src="assets/decorations/locationIcon.svg" alt="Location Icon" width="20" height="20">
+        <a href="https://maps.app.goo.gl/1M7jn6DJdzmKmSnR6" target="_blank">Lot 53, Lorong Avenue 3, Bandar Utama, 90000 Sandakan, Sabah.</a>
+        <img src="assets/decorations/phoneIcon.svg" alt ="Phone Icon" width="20" height="20">
+        <a href="tel:0128888888">012-888 6666</a>
+        <img src="assets/decorations/emailIcon.svg" alt="Email Icon" width="20" height="20">
+        <a href="mailto:catcornercafe@gmail.com">support@catcornercafe.com</a><br>
+        <p>
+        Cat Corner Cafe &copy; 2025 All Rights Reserved 
+        <img src="assets/decorations/instagram-brands.svg" alt="Instagram Icon" width="20" height="20">
+        <img src="assets/decorations/square-facebook-brands.svg" alt="Facebook Icon" width="20" height="20">
+        <img src="assets/decorations/tiktok-brands.svg" alt="Tiktok Icon" width="20" height="20">
+        </p>
+    </footer>
+</body>
+
+</html>
